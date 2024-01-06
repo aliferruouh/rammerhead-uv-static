@@ -1,25 +1,13 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <title>Alipi | Sophisticated Web Proxy</title>
-    <meta
-      name="description"
-      content="Alipi is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-    />
-    <meta
-      name="keywords"
-      content="proxy, web proxy, alipi, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#434c5e"
-    />
+    <meta name="description" content="Alipi is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!" />
+    <meta name="keywords" content="proxy, web proxy, alipi, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e" />
     <meta name="googlebot" content="index, follow, snippet" />
     <link rel="shortcut icon" content="favicon.ico" />
     <link rel="stylesheet" href="index.css" />
@@ -29,74 +17,92 @@
     <script src="search.js" defer></script>
     <script src="index.js" defer></script>
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Alipi (Web Proxy)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I unblock sites using Alipi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Simply head to an official site featuring Alipi such as Holy Unblocker or Incognito! You can also self-host Alipi on your own web server for maximum privacy."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if Alipi is blocked or not working?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Feel free to reach out for support!"
-            }
-          }
-        ]
-      }
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "What is Alipi (Web Proxy)?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I unblock sites using Alipi?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Simply head to an official site featuring Alipi such as Holy Unblocker or Incognito! You can also self-host Alipi on your own web server for maximum privacy."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What if Alipi is blocked or not working?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Feel free to reach out for support!"
+                    }
+                }
+            ]
+        }
     </script>
-  </head>
 
-  <body>
-    <div
-      title="Alipi Logo"
-      class="flex-center logo-wrapper header-center"
-    >
-      <img class="logo" src="uv.png" alt="Alipi" />
-      <h1>Alipi</h1>
+    <!-- Styles for the modern YouTube-style button -->
+    <style>
+        /* Updated styles for button18 */
+        #button18 {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #ff0000; /* YouTube red color */
+            color: #fff; /* Text color */
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        #button18:hover {
+            background-color: #cc0000; /* Darker red on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div title="Alipi Logo" class="flex-center logo-wrapper header-center">
+        <img class="logo" src="uv.png" alt="Alipi" />
+        <h1>Alipi</h1>
     </div>
     <div class="flex-center desc left-margin">
-      <p>
-        Alipi is highly sophisticated proxy used for evading internet
-        censorship.
-      </p>
+        <p>Alipi is a highly sophisticated proxy used for evading internet censorship.</p>
     </div>
 
     <form id="uv-form" class="flex-center">
-      <input
-        id="uv-search-engine"
-        value="https://www.google.com/search?q=%s"
-        type="hidden"
-      />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
+        <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
+        <input id="uv-address" type="text" placeholder="Search the web freely" />
     </form>
     <div class="desc left-margin">
-      <p id="uv-error"></p>
-      <pre id="uv-error-code"></pre>
+        <p id="uv-error"></p>
+        <pre id="uv-error-code"></pre>
     </div>
+
+    <!-- Modern YouTube-style button renamed to button18 -->
+    <a href="rammerhead.html">
+        <button id="button18">Go to Rammerhead</button>
+    </a>
+
     <footer>
-      <div>
-        <a title="The official deployment repository for Alipi" href="https://github.com/aliferruouh/rammerhead-uv-static">GitHub</a>
-        <a title="License information" href="credits.html">Credits to [TN]</a>
-      </div>
-      <div>
-        <span>Alipi &copy; TN 2023</span>
-      </div>
+        <div>
+            <a title="The official deployment repository for Alipi" href="https://github.com/aliferruouh/rammerhead-uv-static">GitHub</a>
+            <a title="License information" href="credits.html">Credits to [TN]</a>
+        </div>
+        <div>
+            <span>Alipi &copy; TN 2023</span>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
